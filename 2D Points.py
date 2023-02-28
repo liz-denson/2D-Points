@@ -9,6 +9,8 @@
 
 # Import libraries
 import math
+import tkinter
+import random
 
 # Point class
 class Point:
