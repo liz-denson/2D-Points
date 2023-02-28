@@ -15,9 +15,9 @@ class Point:
     # Constructor that initializes a Point with specified values for X and Y
     # Defaults the 0.0 value for both components
     def __init__(self, x=0.0, y=0.0):
-    # Instance variables where each component is a floating point value
-    self._x = float(x)
-    self._y = float(y)
+        # Instance variables where each component is a floating point value
+        self._x = float(x)
+        self._y = float(y)
     
     # Getters
     def get_x(self):
