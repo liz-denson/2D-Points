@@ -68,10 +68,17 @@ class CoordinateSystem(tk.Canvas):
     POINT_RADIUS = 0
     # Class variable for the possible colors of the plotted points
     POINT_COLORS = [ "black", "red", "green", "blue", "cyan", "yellow", "magenta" ]
+    # Class variable that sets the width to 800
+    WIDTH = 800
+    # Class variable that sets the height to 800
+    HEIGHT = 800
+    # Class variable that sets the number of points to 5000
+    NUM_POINTS = 5000
     # Constructor for the CoordinateSystem class
-    def __init__(self, master, width=800, height=800, num_points=5000):
-        # Initializes a new canvas with the specified width and height, and white background
-        super().__init__(master, width=width, height=height, bg='white')
+    def __init__(self, master):
+        # Instance variables
+        # Initializes a new canvas with a white background
+        Canvas.__init__(self, master, bg="white")
         # Pack the canvas to fill the entire Tkinter window
         self.pack(fill=tk.BOTH, expand=True)
         # Instance variable for the number of points to plot
