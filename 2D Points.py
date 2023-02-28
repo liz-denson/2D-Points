@@ -1,5 +1,5 @@
 ########################################################################################################
-# Word Search (Grid Class)
+# 2D Points
 # Liz Denson & Caroline Holland
 # Last modified on 2023-02-28
 #
