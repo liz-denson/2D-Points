@@ -109,6 +109,10 @@ class CoordinateSystem(Canvas):
         # on the specified x and y coordinates with the specified color
         self.create_oval(x, y, x + POINT_RADIUS * 2, y + POINT_RADIUS * 2, outline=color)
 
+###############
+# MAIN PROGRAM
+###############
+
 # Create a Tkinter window
 window = Tk()
 # Set the geometry of the window to the specified WIDTH and HEIGHT
