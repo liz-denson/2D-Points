@@ -60,4 +60,20 @@ class Point:
     def __str__(self):
         # Returns a string in the format (x,y)
         return "({}, {})".format(self._x, self._y)
+    
+# CoordinateSystem class that inherits from Tkinter's Canvas class
+class CoordinateSystem(tk.Canvas):
+    # Class varaibles
+    # Class variable for the radius of the plotted points
+    POINT_RADIUS = 0
+    # Class variable for the possible colors of the plotted points
+    POINT_COLORS = [ "black", "red", "green", "blue", "cyan", "yellow", "magenta" ]
+    # Constructor for the CoordinateSystem class
+    def __init__(self, master, width=800, height=800, num_points=5000):
+        # Initializes a new canvas with the specified width and height, and white background
+        super().__init__(master, width=width, height=height, bg='white')
+        # Pack the canvas to fill the entire Tkinter window
+        self.pack(fill=tk.BOTH, expand=True)
+        # Instance variable for the number of points to plot
+        self.num_points = num_points
         
