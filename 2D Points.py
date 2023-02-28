@@ -114,7 +114,7 @@ window = Tk()
 # Set the geometry of the window to the specified WIDTH and HEIGHT
 window.geometry("{}x{}".format(WIDTH, HEIGHT))
 # Set the title of the window
-window.title("Check out these points!")
+window.title("Points can be fun!")
 # Create an instance of the CoordinateSystem class on the Tkinter window
 p = CoordinateSystem(window)
 # Call the plotPoints() method to plot NUM_POINTS random points on the canvas
