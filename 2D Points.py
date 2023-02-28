@@ -14,7 +14,7 @@ import math
 
 # Point class
 class Point:
-    # Constructor that initializes a Point with specified values for X and Y
+    # Constructor that initializes a Point with specified values for x and y
     # Defaults the 0.0 value for both components
     def __init__(self, x=0.0, y=0.0):
         # Instance variables where each component is a floating point value
@@ -23,41 +23,41 @@ class Point:
     
     # Getters
     def get_x(self):
-        # Accessor for the X component
+        # Accessor for the x component
         return self._x
     
     def get_y(self):
-        # Accessor for the Y component
+        # Accessor for the y component
         return self._y
     
     # Setters
     def set_x(self, value):
-        # Mutator method for the X component
+        # Mutator method for the x component
         self._x = float(value)
         
     def set_y(self, value):
-        # Mutator method for the Y component
+        # Mutator method for the y component
         self._y = float(value)
         
-    # Call X and Y getters and setters through the propery function
+    # Call x and y getters and setters through the propery function
     x = property(get_x, set_x)
     y = property(get_y, set_y)
     
-    # Calculate the distance between two points and takes another Point as an argument
+    # Calculate the distance between two points and takes another point as an argument
     def dist(self, other_point):
         # Distance formula to calculate the distance between the two points
         return math.sqrt((self._x - other_point.get_x()) ** 2 +
                          (self._y - other_point.get_y()) ** 2)
 
-    # Calculate the midpoint between two points and takes another Point as an argument
+    # Calculate the midpoint between two points and takes another point as an argument
     def midpt(self, other_point):
-        # Calculates the average of the X and Y components of the two points
+        # Calculates the average of the x and y components of the two points
         mid_x = (self._x + other_point.get_x()) / 2.0
         mid_y = (self._y + other_point.get_y()) / 2.0
-        # Returns a new Point instance with the midpoint coordinates
+        # Returns a new point instance with the midpoint coordinates
         return Point(mid_x, mid_y)
 
-    # Magic method to provide a string representation of the Point instance
+    # Magic method to provide a string representation of the point instance
     def __str__(self):
         # Returns a string in the format (x,y)
         return "({}, {})".format(self._x, self._y)
