@@ -39,7 +39,7 @@ class Point:
         # Mutator method for the y component
         self._y = float(value)
         
-    # Call x and y getters and setters through the propery function
+    # Call x and y getters and setters through the property function
     x = property(get_x, set_x)
     y = property(get_y, set_y)
     
